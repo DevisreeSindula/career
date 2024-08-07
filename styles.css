@@ -1,0 +1,57 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://readwrite.com/wp-content/uploads/2021/06/Trends-Construction-and-Technology.jpg)
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.hover-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box:hover .hover-btn {
+    opacity: 1;
+}
+
+#technical {
+    background-color: #e0f7fa;
+}
+
+#non-technical {
+    background-color: #ffebee;
+}
